@@ -23,7 +23,7 @@ public class Signature {
 	}
 	
 	public static void main(String[] args) {
-		WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "url=http://mp.weixin.qq.com");
+		WeiXinApi weiXinApi = Signature.instace("", "" , "url=http://mp.weixin.qq.com");
 		
 		System.out.println(weiXinApi.getSignature());
 	}

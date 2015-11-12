@@ -83,6 +83,6 @@ public class Token {
 	}
 
 	public static void main(String[] args) {
-		Token.instance("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d");
+		Token.instance("", "");
 	}
 }

@@ -28,8 +28,8 @@ public class Ticket {
 	}
 
 	public static void main(String[] args) {
-		TicketBean ticketBean = Ticket.instance("wx9a4afa543bacda27",
-				"d4624c36b6795d1d99dcf0547af5443d");
+		TicketBean ticketBean = Ticket.instance("",
+				"");
 		System.out.println(ticketBean.getTicket());
 	}
 }
