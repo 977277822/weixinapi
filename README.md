@@ -1,10 +1,10 @@
 # 生成微信服务号config配置
 
-### 根据票据计算微信js_config 配置
-WeiXinUtil.getTicketBean(appId,secret);
+### 获取微信票据 票据对象最好在服务器端缓存起来，每隔一个小时自动调用一次刷新票据
+WeiXinUtil.getTicketBean(appId,secret);  return ticketBean;
 
 ### 根据票据计算微信js_config 配置
-WeiXinUtil.getTicketBean(appId,secret);
+WeiXinUtil.getWeiXinApiBean(ticketBean,url);
 
 ## 第一个参数为appid
 
