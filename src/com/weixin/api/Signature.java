@@ -10,7 +10,7 @@ public class Signature {
 		String jsapi_ticket = ticketBean.getTicket();
 		String timestamp = ticketBean.getExpires_in();
 		
-		String string1 = "jsapi_ticket=" + jsapi_ticket + "&noncestr" + noncestr + "&timestamp" + timestamp + "&url=" + url;
+		String string1 = "jsapi_ticket=" + jsapi_ticket + "&noncestr=" + noncestr + "&timestamp=" + timestamp + "&url=" + url;
 		
 		String signature = SHA1.getSha1(string1);
 		
@@ -22,9 +22,11 @@ public class Signature {
 	}
 	
 	public static void main(String[] args) {
-		WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "url=http://mp.weixin.qq.com");
-		System.out.println(weiXinApi.getNoncestr());
-		System.out.println(weiXinApi.getSignature());
-		System.out.println(weiXinApi.getTimestamp());
+		WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "http://218.249.39.154/?reOpenid=bwzxZ92aU4HaFfzaZ534Y33R1J4OTA0NldxREJXY0pLQ3hTSQO0O0OO0O0O");
+		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("appId:" + "wx9a4afa543bacda27");
+		System.out.println("nonceStr:" + weiXinApi.getNoncestr());
+		System.out.println("signature:" + weiXinApi.getSignature());
+		System.out.println("timestamp:" + weiXinApi.getTimestamp());
 	}
 }
