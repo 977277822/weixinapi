@@ -2,6 +2,11 @@ package com.weixin.api;
 
 import java.util.UUID;
 
+/**
+ * 获取UUID字符串
+ * @author 小彬
+ *
+ */
 public class Noncestr {
 	public static String getUUID() {
 		UUID uuid = UUID.randomUUID();

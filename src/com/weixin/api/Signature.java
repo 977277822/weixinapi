@@ -2,6 +2,11 @@ package com.weixin.api;
 
 import com.weixin.data.TicketBean;
 
+/**
+ * 签名算法
+ * @author 小彬
+ *
+ */
 public class Signature {
 	
 	public static WeiXinApi instace(String appid, String secret , String url){

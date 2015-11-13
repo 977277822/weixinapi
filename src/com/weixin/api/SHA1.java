@@ -1,5 +1,9 @@
 package com.weixin.api;
-
+/**
+ * sha1加密算法
+ * @author 小彬
+ *
+ */
 public class SHA1 {
 	private final int[] abcde = { 0x67452301, 0xefcdab89, 0x98badcfe,
 			0x10325476, 0xc3d2e1f0 };

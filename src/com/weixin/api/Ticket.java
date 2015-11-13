@@ -5,7 +5,11 @@ import java.io.IOException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.weixin.data.TicketBean;
 import com.weixin.data.TokenBean;
-
+/**
+ * 生成jsapi_ticket
+ * @author 小彬
+ *
+ */
 public class Ticket {
 	public static final String ticket_url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket";
 
