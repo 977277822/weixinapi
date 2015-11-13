@@ -1,13 +1,23 @@
 package com.weixin.data;
 
 public class TicketBean {
+	private String appId;
+
 	private String errcode;
-	
+
 	private String errmsg;
-	
+
 	private String ticket;
-	
+
 	private String expires_in;
+
+	public String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(String appId) {
+		this.appId = appId;
+	}
 
 	public String getErrcode() {
 		return errcode;
@@ -40,8 +50,5 @@ public class TicketBean {
 	public void setExpires_in(String expires_in) {
 		this.expires_in = expires_in;
 	}
-	
-	
-	
-	
+
 }

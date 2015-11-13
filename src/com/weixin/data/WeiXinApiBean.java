@@ -1,11 +1,22 @@
-package com.weixin.api;
+package com.weixin.data;
 
-public class WeiXinApi {
+public class WeiXinApiBean {
+
+	private String appId;
+
 	private String noncestr;
-	
+
 	private String timestamp;
-	
+
 	private String signature;
+
+	public String getAppId() {
+		return appId;
+	}
+
+	public void setAppId(String appId) {
+		this.appId = appId;
+	}
 
 	public String getNoncestr() {
 		return noncestr;
@@ -30,7 +41,5 @@ public class WeiXinApi {
 	public void setSignature(String signature) {
 		this.signature = signature;
 	}
-	
-	
-	
+
 }
