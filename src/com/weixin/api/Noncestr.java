@@ -10,7 +10,7 @@ public class Noncestr {
 		String temp = str.substring(0, 8) + str.substring(9, 13)
 				+ str.substring(14, 18) + str.substring(19, 23)
 				+ str.substring(24);
-		return str + "," + temp;
+		return temp;
 	}
 
 	// 获得指定数量的UUID

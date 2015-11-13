@@ -15,7 +15,6 @@ public class Signature {
 		String signature = SHA1.getSha1(string1);
 		
 		WeiXinApi weiXinApi = new WeiXinApi();
-		
 		weiXinApi.setNoncestr(noncestr);
 		weiXinApi.setTimestamp(timestamp);
 		weiXinApi.setSignature(signature);
@@ -23,8 +22,9 @@ public class Signature {
 	}
 	
 	public static void main(String[] args) {
-		WeiXinApi weiXinApi = Signature.instace("", "" , "url=http://mp.weixin.qq.com");
-		
+		WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "url=http://mp.weixin.qq.com");
+		System.out.println(weiXinApi.getNoncestr());
 		System.out.println(weiXinApi.getSignature());
+		System.out.println(weiXinApi.getTimestamp());
 	}
 }
