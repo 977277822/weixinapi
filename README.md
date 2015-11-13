@@ -1,7 +1,10 @@
 # 生成微信服务号config配置
 
+### 根据票据计算微信js_config 配置
+WeiXinUtil.getTicketBean(appId,secret);
 
-WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "url=http://mp.weixin.qq.com");
+### 根据票据计算微信js_config 配置
+WeiXinUtil.getTicketBean(appId,secret);
 
 ## 第一个参数为appid
 
