@@ -31,7 +31,7 @@ public class Signature {
 
 	public static void main(String[] args) {
 		TicketBean ticketBean = Ticket.instance("appid", "secret");
-		WeiXinApiBean weiXinApi = Signature.instance(ticketBean, "url");
+		WeiXinApiBean weiXinApi = Signature.instance(ticketBean, "http://www.dasbank.com/");
 		System.out
 				.println("-------------------------------------------------------------------------------");
 		System.out.println("appId:" + "appid");
