@@ -27,9 +27,9 @@ public class Signature {
 	}
 	
 	public static void main(String[] args) {
-		WeiXinApi weiXinApi = Signature.instace("wx9a4afa543bacda27", "d4624c36b6795d1d99dcf0547af5443d" , "http://218.249.39.154/?reOpenid=bwzxZ92aU4HaFfzaZ534Y33R1J4OTA0NldxREJXY0pLQ3hTSQO0O0OO0O0O");
+		WeiXinApi weiXinApi = Signature.instace("appid", "secret" , "url");
 		System.out.println("-------------------------------------------------------------------------------");
-		System.out.println("appId:" + "wx9a4afa543bacda27");
+		System.out.println("appId:" + "appid");
 		System.out.println("nonceStr:" + weiXinApi.getNoncestr());
 		System.out.println("signature:" + weiXinApi.getSignature());
 		System.out.println("timestamp:" + weiXinApi.getTimestamp());
